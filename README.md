@@ -15,7 +15,6 @@
 
 ### General 
 ![homepage](screenshots/homepage.png)
-![login](screenshots/login.png)
 ![help](screenshots/help.png)
 ![help2](screenshots/help2.png)
 
