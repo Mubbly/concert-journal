@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Concert Journal</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guide.html">How to get started</a></li>
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="toplist.html">Top 100 users</a></li>
+                    <li><a href="login.html">Log in</a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="content">
+            <h1>Concert Journal</h1>
+
+            <h2>Describe a concert you went to: </h2>
+
+            <form action="index.html" method="POST" enctype="multipart/form-data" class="center">
+                <div id="postform">
+                    <hr /> Arstist: <input type="text" name="postartist" placeholder="band or a singer" maxlength="25" required /><br /><br /> Warm-up artist(s): <input type="text" name="postwarmup" placeholder="warm-up artists" /><br /><br /> Date/time
+                    <div class="comment2">(dd/mm/yyyy)</div>:<input type="date" name="postdate" required /><br /><br /> Venue: <input type="text" name="postvenue" placeholder="where?" required /><br /><br /> Seats: <input type="text" name="postseats" placeholder="where did you sit/stand?"
+                        size="23" /><br /><br /> Fan-zone?: Yes<input type="radio" name="postfanzone" value="yes" /> No<input type="radio" name="postfanzone" value="no" /><br /><br /> Who went:<input type="text" name="postwhowent" placeholder="who were you with?"
+                    /><br /><br /> Personal rating:<br />
+                    <div class="rating">
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    </div>
+                    <textarea name="postpersonalrating" cols="50" rows="5" maxlength="1000" placeholder="Describe what you felt"></textarea><br />
+
+                    <h2>About artist:</h2>
+                    <hr /> Country: <input type="text" name="postcountry" placeholder="from which country are they from?" size="33" maxlength="25" required /><br /><br /> How many times have you seen them live?
+                    <select name="posthowmanytimes" size="1">
+			<option value="1">1
+			<option value="2">2
+			<option value="3">3
+			<option value="4">4
+			<option value="5">5
+			<option value="6">6
+			<option value="7">7
+			<option value="8">8
+			<option value="9">9
+			<option value="10">10
+			<option value="10+">10+
+			</select><br /><br /> Would you like to see them again? <select name="postseeagain" size="1">
+			<option value="Yes">Yes
+			<option value="No">No
+			<option value="Not sure">Not sure
+			</select><br /><br />
+
+                    <h2>About warm-up artists:</h2>
+                    <hr /> Country: <input type="text" name="postcountry" placeholder="from which country are they from?" size="33" maxlength="25" required /><br /><br /> How much did you like them? <select name="postwarmuplike" size="1">
+			<option value="-Loved- it">-Loved- it
+			<option value="Liked it">Liked it
+			<option value="Not bad!">Not bad!
+			<option value="Not amused">Not amused
+			<option value="Hated it">Hated it
+			<option value="Don't care">Don't care
+			</select><br /><br /> Have you seen them live before? <select name="postseeagain" size="1">
+			<option value="Yes">Yes, once
+			<option value="Yes">Yes, more than once
+			<option value="No">No, it was the first time
+			<option value="No">Glad I haven't
+			<option value="Not sure">I wish I had!
+			</select><br /><br />
+
+                    <h2>Add pictures:</h2>
+                    <div class="comment">* Please add pictures with <u>bands names</u> on them!</div>
+
+                    <hr /> Artist picture: <input type="file" name="postartistpic"><br /> Warm-up picture: <input type="file" name="postwarmuppic"><br /><br />
+                    <div class="comment2">Want automatically generated images? Check this box
+                        <input type="checkbox" name="postautopicture" value="autopicture" /><br /></div><br />
+                    <hr /><br />
+
+                    <input class="comment" type="submit" value="Submit"><br /><br />
+                </div>
+            </form>
+        </div>
+        <footer>
+            <p>&copy; 2014 Melissa Eenmaa</p>
+        </footer>
+    </div>
+</body>
+
+</html>

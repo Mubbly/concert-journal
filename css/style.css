@@ -1,0 +1,290 @@
+body {
+    background-image: url("../img/music.jpg");
+    background-size: cover;
+    background-position: left top;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+@font-face {
+    /* content */
+    font-family: "Convergence-Regular";
+    src: url("../fonts/Convergence-Regular.ttf");
+}
+
+@font-face {
+    /* h1 */
+    font-family: "Jellyka Delicious Cake";
+    src: url("../fonts/Jellyka Delicious Cake.ttf");
+}
+
+@font-face {
+    /* h2 */
+    font-family: "DJB I Love Me Some Brook";
+    src: url("../fonts/DJB I Love Me Some Brook.ttf");
+}
+
+@font-face {
+    /* lists */
+    font-family: "SinkinSans-300Light";
+    src: url("../fonts/SinkinSans-300Light.otf");
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+    line-height: 40px;
+    font-family: "Trebuchet MS";
+}
+
+#menu ul {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#menu ul li {
+    display: inline-block;
+}
+
+#menu a {
+    color: #CCCCCC;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0px 25px;
+}
+
+#menu a:hover {
+    background-color: #474747;
+}
+
+#content {
+    position: static;
+    width: 850px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: #CCCCCC;
+    padding: 40px 0;
+    font-family: "Convergence-Regular";
+}
+
+#content p,
+form {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#content ul {
+    font-family: "SinkinSans-300Light";
+    font-size: 14px;
+}
+
+#content a {
+    color: #004747;
+    /* #142952; */
+    text-shadow: none;
+    font-family: "Convergence-Regular";
+}
+
+#content a:hover {
+    text-shadow: 2px 2px 4px #4C4C4C;
+}
+
+#content a:visited {
+    text-decoration: none;
+    color: #197575;
+}
+
+h1 {
+    font-weight: 200;
+    color: #9F000F;
+    font-family: "Jellyka Delicious Cake";
+    font-size: 60px;
+    text-align: center;
+    background-color: #A3A3A3;
+    background-image: url("../img/h1background.jpg");
+    margin-top: -40px;
+}
+
+h2,
+caption {
+    font-family: "DJB I Love Me Some Brook";
+    font-size: 25px;
+    text-align: center;
+}
+
+h2.login {
+    font-size: 50px;
+    float: left;
+    margin-left: 20px;
+    margin-top: auto;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+}
+
+#indexlist ul {
+    list-style: none;
+    text-align: center;
+    font-family: "SinkinSans-300Light";
+    font-size: 14px;
+}
+
+#indexlist ul li:before {
+    content: "✔";
+    /* ✔ 🎸 ★✷ */
+    padding-right: 5px;
+}
+
+#picture {
+    float: right;
+    margin-right: 25px;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 240px;
+    width: 180px;
+}
+
+#toggle {
+    color: #9F000F;
+    font-size: 20px;
+    text-align: center;
+    font-family: "DJB I Love Me Some Brook";
+}
+
+#gallery img {
+    float: left;
+    width: 33%;
+    margin: 0px;
+    padding: 0px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0px;
+    height: 50px;
+    width: 10px;
+}
+
+th {
+    background-color: #A3A3A3;
+}
+
+#searchbox {
+    float: right;
+    margin-right: 15px;
+    margin-top: -25px;
+    font-family: "Convergence-Regular";
+    font-size: 14px;
+}
+
+img.dp {
+    width: 200px;
+    height: 200px;
+}
+
+img.johannaa7x,
+img.melissahurts {
+    cursor: pointer;
+}
+
+#postform {
+    text-align: justify;
+    margin: 0 auto;
+    width: 26em;
+}
+
+.postpics {
+    width: 425px;
+    float: left;
+}
+
+.comment {
+    font-style: italic;
+    font-size: 13px;
+    color: #9F000F;
+    text-align: center;
+}
+
+.comment2 {
+    font-size: 14px;
+    display: inline-block;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* five star rating - https://css-tricks.com/star-ratings/ */
+
+.rating {
+    unicode-bidi: bidi-override;
+    float: left;
+    margin-top: 2px;
+    margin-left: -8px;
+    direction: rtl;
+    font-size: 30px;
+}
+
+.rating>span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+
+.rating>span:hover:before,
+.rating>span:hover~span:before {
+    content: "★";
+    position: absolute;
+}
+
+hr {
+    border: 1px solid rgb(128, 128, 128);
+}
+
+#join,
+#clearfloat {
+    clear: both;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+    text-align: center;
+}
+
+footer p {
+    color: #CCCCCC;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/* Something something */
